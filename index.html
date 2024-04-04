@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>c0st4</title>
+  <script src="script.js" type="text/javascript" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <main>
+      <div class="header"> bash - Portfolio</div>
+      <div class="terminal" id="terminalWindow" >
+        <section id="terminal">
+          <div class="command">Successful Connection - <span class="error" id="date"></span></div>
+          <div class="title">Olá, Mundo!</div>
+          Bem vindo ao meu site, para visualizar a lista de comandos digite <span class="command">help</span>
+        </section>
+        <div class="prompt">
+          <span class="command">visitor@terminal:~</span> <span class="title">$</span> <input id="promtInput"/>
+        </div>
+      </div>
+    </main>
+    <div class="hidden" id="promptClone">
+      <span class="command">visitor@terminal:~</span> <span class="title">$</span> <span class="promtCloneInput"></span>
+      <div class="promtCloneContent"></div>
+    </div>
+    <div class="hidden" id="help">
+      <div class="sectionTitle">Insira um comando: </div>
+      <div class="indent">
+        <div>
+          <span class="command">about</span>:
+          <div class="indent">Sobre Mim</div> 
+        </div>
+        <div>
+          <span class="command">social</span>:
+          <div class="indent">Minhas redes sociais</div> 
+        </div>
+        <div>
+          <span class="command">skills</span>:
+          <div class="indent">Habilidades e conhecimentos</div> 
+        </div>
+        <div>
+          <span class="command">education</span>:
+          <div class="indent">Meus estudos</div> 
+        </div>
+        <div>
+          <span class="command">blog</span>:
+          <div class="indent">Visite meu blog no medium sobre hacking e CTF</div> 
+        </div>
+        <div>
+          <span class="command">clear</span>:
+          <div class="indent">Limpar o terminal</div> 
+        </div>
+      </div>
+    </div>
+
+    
+
+    <div class="hidden" id="skills">
+      <div class="sectionTitle">Skills: </div>
+      <div class="indent">
+        <div>
+          <span class="command">Habilidades Gerais</span>:
+          <div class="indent">
+            <span class="title">Conhecimento em Redes</span>
+            <span class="title">Banco de dados</span>
+            <span class="title">Segurança de redes e sistemas</span>
+            <span class="title">Criptografia</span>
+            <span class="title">Análise de Vulnerabilidades</span>
+          </div> 
+        </div>
+        <div>
+          <span class="command">Programação</span>:
+          <div class="indent">
+            <span class="title">Python</span>
+            <span class="title">Shell Script</span>
+            <span class="title">SQL</span>
+            <span class="title">Programação Web</span>
+          </div> 
+        </div>
+        <div>
+          <span class="command">Web Hacking</span>:
+          <div class="indent">
+            <span class="title">Automação de scripts para reconhecimento</span>
+            <span class="title">Identificação de Vulnerabilidades</span>
+            <span class="title">Familiaridade com ferramentas para testes de segurança</span>
+            <span class="title">OWASP top 10</span>
+          </div> 
+        </div>
+      </div>
+    </div>
+
+    <div class="hidden" id="about">
+      <div class="sectionTitle">Sobre mim: </div>
+        <div class="indent">
+          Olá! meu nome é <span class="command">Daniel Costa</span>
+           tenho 24 anos e sou estudante de segurança da informação. <br> Motivado a aprender e aplicar meus conhecimentos, busco adquirir habilidades nos diversos cenários de atuação da área.
+        </div> 
+    </div>
+
+   <div class="hidden" id="social">
+  <div class="sectionTitle">Redes Sociais:</div>
+  <div class="indent">
+    <span class="title">Github</span> - <span class="command">https://github.com/Dc0st4</span>
+  </div>
+  <div class="indent">
+    <span class="title">LinkedIn</span> - <span class="command">https://www.linkedin.com/in/daniel-costa-461393228/</span>
+    <div class="indent">
+      <span class="title">X</span> - <span class="command">https://twitter.com/c0st4_</span>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+    <div class="hidden" id="blog">
+    	<div class="sectionTitle">Blog</div>
+    	<div class="indent">
+    		<span class="title">Medium</span> - <span class="command">https://medium.com/@danielcostacm05</span>
+    	</div>
+    </div>
+
+
+
+
+
+
+    <div class="education hidden" id="education">
+      <div class="sectionTitle">Formação: </div>
+      <div class="indent">
+        <span class="title">Segurança da informação - Tecnólogo</span> <span class="command">Cursando</span>
+        <div class="indent">
+          
+        </div> 
+      </div>
+      <div class="indent">
+        <span class="title">Pentest - Solyd Offensive Security</span> <span class="command">Finalizado 2020</span>
+        <div class="indent">
+          
+        </div> 
+      </div>
+    </div>
+</body>
+</html>

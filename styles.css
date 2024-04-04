@@ -1,0 +1,215 @@
+:root {
+  --gray: #000000;
+  --background: #000000;
+  --header: #4a4a4a;
+  --text: #F5F3F1;
+  --title: #E01B24;
+  --command: #68ff99;
+  --error: #ff8383;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  background-color: var(--gray);
+  color: var(--text);
+  font-family: 'Space Mono', monospace;
+  font-size: 14px;
+  height: 100vh;
+}
+
+main {
+  height: 550px;
+  width: 550px;
+  max-width: 550px;
+}
+
+.terminal {
+  background-color: var(--background);
+  color: var(--text);
+  padding: 20px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  overflow: scroll;
+  height: 100%;
+}
+
+.terminal div{
+  margin-top: 5px;
+}
+
+.header {
+  padding: 0 20px;
+  height: 25px;
+  margin: 0;
+  background-color: var(--header);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.prompt {
+  display: grid;
+  grid-template-columns: auto auto 1fr;
+  column-gap: 7px;
+}
+
+input {
+  background-color: var(--background);
+  color: var(--text);
+  font-size: 14px;
+  font-family: 'Space Mono', monospace;
+  border: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+.sectionTitle {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.title {
+  color: var(--title);
+  font-weight: 600;
+}
+
+.error {
+  color: var(--error);
+  font-weight: 600;
+}
+
+.command {
+  color: var(--command);
+  font-weight: 600;
+}
+
+.indent {
+  margin-left: 5px;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 750px) {
+  main {
+    width: 100%;
+  }
+}
+
+.terminal {
+  background-color: var(--background);
+  color: var(--text);
+  padding: 20px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  overflow: hidden; /* Adiciona overflow: hidden; para esconder a barra de rolagem */
+  height: 100%;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  background-color: #000;
+  color: #0f0; /* Cor verde neon para o texto */
+  font-family: 'Digital-7', monospace; /* Usando uma fonte digital */
+  font-size: 14px;
+  height: 100vh;
+}
+
+.terminal {
+  background-color: #000;
+  padding: 20px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  overflow: hidden;
+  height: 100%;
+  position: relative;
+}
+
+.terminal::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, transparent 50%, #0f0 50%);
+  background-size: 200% 100%;
+  animation: flicker 1s infinite;
+}
+
+@keyframes flicker {
+  0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
+    background-position: -200% 0;
+  }
+  20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
+    background-position: 200% 0;
+  }
+}
+
+.header {
+  padding: 0 20px;
+  height: 25px;
+  margin: 0;
+  background-color: #000;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.command {
+  color: #0f0; /* Cor verde neon para os comandos */
+}
+
+.error {
+  color: #E01B24; /* Cor vermelha neon para erros */
+}
+
+.prompt {
+  display: grid;
+  grid-template-columns: auto auto 1fr;
+  column-gap: 7px;
+}
+
+input {
+  background-color: #000;
+  color: #0f0;
+  font-size: 14px;
+  font-family: 'Digital-7', monospace;
+  border: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+.indent {
+  margin-left: 5px;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 750px) {
+  main {
+    width: 100%;
+  }
+}
+
+body {
+  background-image: url('/home/c0st4/Documents/Projects/site_portfolio/'); /* Substitua pelo caminho para sua imagem */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Isso faz com que a imagem de fundo permaneça fixa enquanto você rola a página */
+}
+
